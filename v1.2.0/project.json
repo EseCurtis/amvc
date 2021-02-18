@@ -1,0 +1,23 @@
+{
+    "project_info" : {
+        "author" : "Ese curtis",
+        "version" : "1.0.0",
+        "app_name" : "amvc v1.2.0"      
+    },
+    "website_url" : "https://website.com",
+    "database" : {
+        "host" : "hostname",
+        "username" : "username",
+        "password" : "password",
+        "name" : "databasename"
+    },
+    "views" : {
+        "init" : "view_example",
+        "view_example" : {
+            "source" : "view_example.php"
+        },
+        "404" : {
+            "source" : "404.php"
+        }
+    }
+}
