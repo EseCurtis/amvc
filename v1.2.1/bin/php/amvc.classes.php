@@ -35,22 +35,22 @@
         //setting up interactors
         private function interact(){
             global $content_dir;
-            error_catch(@include $content_dir."/interactors\/".$this->controller_key, "<b>Error:</b> The source file ($this->controller_key) for the api_key ($this->controller_key) is not found found in the interactors directory");
+            error_catch(@include $content_dir."/interactors/".$this->controller_key, "<b>Error:</b> The source file ($this->controller_key) for the api_key ($this->controller_key) is not found found in the interactors directory");
         }
         //setting up props
         private function render_prop(){
             global $content_dir;
-            error_catch(@include $content_dir."/props\/".$this->controller_key, "<b>Error:</b> The source file ($this->controller_key) for the prop ($this->controller_key) is not found in the props directory");
+            error_catch(@include $content_dir."/props/".$this->controller_key, "<b>Error:</b> The source file ($this->controller_key) for the prop ($this->controller_key) is not found in the props directory");
         }
         //setting up views
         private function render_view(){
             global $content_dir;
-            error_catch(@include $content_dir."/views\/".$this->controller_key, "<b>Error:</b> The source file ($this->controller_key) for the view ($this->current_view) is not found found in the views directory"); 
+            error_catch(@include $content_dir."/views/".$this->controller_key, "<b>Error:</b> The source file ($this->controller_key) for the view ($this->current_view) is not found found in the views directory"); 
         }
         //setting up reserved
         private function render_reserved(){
             global $content_dir;
-            include $content_dir."/../amvc-files/reserved\/".$this->controller_key;
+            include $content_dir."/../amvc-files/reserved/".$this->controller_key;
         }
 
         //setting up execution
