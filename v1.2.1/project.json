@@ -1,0 +1,29 @@
+{
+    "website_url" : "http://localhost/amvc_project/v1.2.1",
+
+    "javascript_enabled" : true,
+    "stylesheet_enabled" : true,
+
+    "project_info" : {
+        "logo_src" : "/amvc-files/img/amvc_logo.png",
+        "author" : "Ese curtis",
+        "version" : "1.2.1",
+        "app_name" : "AMVC" ,
+        "description": "A lightweight php Framework for semi real time applications"    
+    },
+    "database" : {
+        "host" : "hostname",
+        "username" : "username",
+        "password" : "password",
+        "name" : "databasename"
+    },
+    "views" : {
+        "init" : "home",
+        "home" : {
+            "source" : "index.php"
+        },
+        "404" : {
+            "source" : "404.php"
+        }
+    }
+}
